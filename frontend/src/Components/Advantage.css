@@ -1,0 +1,95 @@
+/* Advantage.css */
+
+.advantage-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.advantage-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.advantage-sections {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.advantage-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%; /* Set width to 100% by default */
+  max-width: 464.1px; /* Limit maximum width */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.advantage-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.advantage-card h2 {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+/* Small screens (phones, up to 480px) */
+@media (max-width: 480px) {
+  .advantage-heading {
+      font-size: 1.5rem;
+  }
+
+  .advantage-card {
+      width: 100%; /* Take full width */
+      padding: 10px;
+  }
+
+  .advantage-card h2 {
+      font-size: 1rem;
+  }
+}
+
+/* Medium screens (tablets, up to 768px) */
+@media (max-width: 768px) {
+  .advantage-heading {
+      font-size: 1.8rem;
+  }
+
+  .advantage-card {
+      max-width: 400px; /* Adjust card width */
+  }
+
+  .advantage-sections {
+      gap: 15px; /* Reduce gap between cards */
+  }
+}
+
+/* Large screens (desktops, 769px and above) */
+@media (min-width: 769px) {
+  .advantage-card {
+      max-width: 464.1px; /* Maintain maximum width for larger screens */
+  }
+
+  .advantage-heading {
+      font-size: 2rem;
+  }
+}

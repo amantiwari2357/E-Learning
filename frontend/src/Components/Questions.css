@@ -1,0 +1,130 @@
+/* General Styling */
+main {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.FAQ__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.FAQ__list {
+  margin-bottom: 40px;
+}
+
+/* FAQ Accordion Styling */
+.FAQ__accordian {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.FAQ__title {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.FAQ__title:hover {
+  background-color: #f1f1f1;
+}
+
+.FAQ__title i {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.FAQ__title.active i {
+  transform: rotate(45deg);
+}
+
+.FAQ__visible {
+  padding: 15px;
+  background-color: #fafafa;
+  border-left: 3px solid #6c5ce7;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Email Submission Section Styling */
+.custom-email-form-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #6c5ce7;
+}
+
+.custom-email-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-email-input:focus {
+  border-color: #6c5ce7;
+  outline: none;
+}
+
+.custom-primary-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-primary-button:hover {
+  background-color: #5a4bcf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .FAQ__heading {
+    font-size: 2rem;
+  }
+
+  .FAQ__title {
+    font-size: 1rem;
+  }
+
+  .custom-form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .custom-email-input {
+    width: 90%;
+  }
+}

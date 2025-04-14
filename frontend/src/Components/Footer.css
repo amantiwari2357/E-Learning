@@ -1,0 +1,156 @@
+/* Footer.css */
+
+/* General footer styling */
+footer {
+  background-color: white; /* Corrected rgba syntax for violet */
+  color: #757575;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Row 1 styling */
+.footer__row__1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer__row__1 h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Row 2 styling */
+.footer__row__2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer__row__2 div {
+  flex: 1 1 25%;
+  margin-bottom: 20px;
+}
+
+.footer__row__2 p {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.footer__row__2 p:hover {
+  text-decoration: underline;
+}
+
+/* Row 3 styling */
+.footer__row__3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dropdown__container {
+  display: inline-block;
+  position: relative;
+}
+
+.fa-globe {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #757575;
+}
+
+.language__drop__down {
+  background-color: #000;
+  color: #757575;
+  border: 1px solid #333;
+  padding: 10px 30px 10px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.language__drop__down:hover {
+  border-color: #757575;
+}
+
+/* Row 4 styling */
+.footer__row__4 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+
+/* Medium screens (up to 768px) */
+@media (max-width: 768px) {
+  .footer__row__2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__row__2 div {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer__row__1 h4 {
+    font-size: 1rem;
+  }
+
+  .footer__row__2 p {
+    font-size: 0.8rem;
+  }
+
+  .language__drop__down {
+    padding: 8px 25px 8px 35px;
+    font-size: 0.9rem;
+  }
+
+  .footer__row__4 {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small screens (up to 480px) */
+@media (max-width: 480px) {
+  .footer__row__1 h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer__row__2 p {
+    font-size: 0.75rem;
+  }
+
+  .language__drop__down {
+    padding: 6px 20px 6px 30px;
+    font-size: 0.8rem;
+  }
+
+  .footer__row__4 {
+    font-size: 0.75rem;
+  }
+}
+
+/* Large screens (above 1000px) */
+@media (min-width: 1000px) {
+  .footer__row__2 div {
+    flex: 1 1 20%;
+  }
+
+  .footer__row__1 h4 {
+    font-size: 1.4rem;
+  }
+
+  .footer__row__2 p {
+    font-size: 1rem;
+  }
+
+  .footer__row__4 {
+    font-size: 1rem;
+  }
+}

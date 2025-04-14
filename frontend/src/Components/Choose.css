@@ -1,0 +1,125 @@
+/* Why Choose Section */
+
+.why-choose-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.why-choose-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center; /* Center-align items for smaller screens */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width by default */
+  max-width: 300px; /* Limit max width */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feature-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* Small screens (phones, up to 480px) */
+@media (max-width: 480px) {
+  .why-choose-heading {
+      font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .feature {
+      width: 100%; /* Take full width for small screens */
+      padding: 15px; /* Reduce padding */
+  }
+
+  .feature h2 {
+      font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .feature p {
+      font-size: 0.9rem; /* Adjust paragraph size */
+  }
+}
+
+/* Medium screens (tablets, up to 768px) */
+@media (max-width: 768px) {
+  .why-choose-heading {
+      font-size: 2rem; /* Adjust font size for tablets */
+  }
+
+  .feature {
+      max-width: 250px; /* Adjust max width */
+  }
+
+  .features-container {
+      gap: 15px; /* Reduce gap between features */
+  }
+}
+
+/* Large screens (desktops, 769px and above) */
+@media (min-width: 769px) {
+  .why-choose-heading {
+      font-size: 2.5rem;
+  }
+
+  .feature {
+      max-width: 300px; /* Maintain card width */
+  }
+}
+
+.book-class-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.book-class-button {
+  background-color: #ff5722;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.book-class-button:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px);
+}

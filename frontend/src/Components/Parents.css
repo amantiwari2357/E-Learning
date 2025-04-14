@@ -1,0 +1,107 @@
+.equal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  
+}
+
+.border {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1650px;
+  width: 100%;
+}
+
+.div-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Default border */
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  min-width: 380px;
+  position: relative;
+}
+
+/* Enhanced border-2 styling */
+.div-3.border-2 {
+  border: 2px solid #007bff; /* Blue border for emphasis */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Matching shadow */
+  
+}
+
+.div-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flex img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover; /* Ensures images are properly scaled */
+}
+
+.flex h6 {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  font-weight: 600; /* Added font weight for better readability */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.flex strong {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  font-weight: 400; /* Adjusted font weight */
+}
+
+/* Responsive Design */
+@media (max-width: 868px) {
+  .border {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .div-3 {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .flex img {
+    width: 60px; /* Smaller image size for mobile */
+    height: 60px;
+  }
+
+  .flex h6 {
+    font-size: 14px; /* Smaller font size for mobile */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .flex strong {
+    font-size: 12px; /* Smaller font size for mobile */
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+
+/* Additional hover effect for border-2 */
+.div-3.border-2:hover {
+  border-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Enhanced shadow on hover */
+}

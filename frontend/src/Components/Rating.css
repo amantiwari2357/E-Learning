@@ -1,0 +1,61 @@
+/* General Styles */
+.border {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1; /* Allow each section to grow and take equal space */
+  min-width: 200px; /* Minimum width for each section */
+}
+
+.div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.div img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.div h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.div p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .border {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+
+  .div {
+    min-width: 100%; /* Full width for each section on smaller screens */
+  }
+}
